@@ -37,7 +37,9 @@
             app:error="@{viewModel.heightErrorMessage}"
             app:layout_constraintBottom_toTopOf="@+id/editTextNumberSigned2"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent">
+            app:layout_constraintStart_toStartOf="parent"
+            app:helperTextEnabled="true"
+            app:helperText="height values should be >= 0">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -56,9 +58,11 @@
             app:error="@{viewModel.speedErrorMessage}"
             app:layout_constraintBottom_toTopOf="@+id/button"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent">
+            app:layout_constraintStart_toStartOf="parent"
+            app:helperTextEnabled="true"
+            app:helperText="speed values should be >= 0">
 
-            <com.google.android.material.textfield.TextInputEditText
+        <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="numberSigned"
@@ -75,9 +79,11 @@
             app:error="@{viewModel.angelErrorMessage}"
             app:layout_constraintBottom_toTopOf="@+id/editTextNumberSigned3"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent">
+            app:layout_constraintStart_toStartOf="parent"
+            app:helperTextEnabled="true"
+            app:helperText="90 >= angel >= -90">
 
-            <com.google.android.material.textfield.TextInputEditText
+        <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="numberSigned"
