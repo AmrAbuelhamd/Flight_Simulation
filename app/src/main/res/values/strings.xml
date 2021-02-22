@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Flight</string>
+    <string name="height">height</string>
+    <string name="speed">speed</string>
+    <string name="angle">angle</string>
+    <string name="launch">Launch</string>
+    <string name="pause">pause</string>
+</resources>
