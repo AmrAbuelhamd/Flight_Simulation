@@ -19,8 +19,8 @@
             android:id="@+id/chart"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="8dp"
             android:paddingBottom="20dp"
             app:layout_constraintBottom_toTopOf="@+id/editTextNumberSigned"
             app:layout_constraintEnd_toEndOf="parent"
@@ -34,6 +34,7 @@
             android:layout_margin="8dp"
             android:ems="10"
             android:hint="@string/height"
+            app:error="@{viewModel.heightErrorMessage}"
             app:layout_constraintBottom_toTopOf="@+id/editTextNumberSigned2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent">
@@ -52,6 +53,7 @@
             android:layout_margin="8dp"
             android:ems="10"
             android:hint="@string/speed"
+            app:error="@{viewModel.speedErrorMessage}"
             app:layout_constraintBottom_toTopOf="@+id/button"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent">
@@ -70,6 +72,7 @@
             android:layout_margin="8dp"
             android:ems="10"
             android:hint="@string/angle"
+            app:error="@{viewModel.angelErrorMessage}"
             app:layout_constraintBottom_toTopOf="@+id/editTextNumberSigned3"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent">
@@ -112,6 +115,19 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/button2"
             app:layout_constraintStart_toEndOf="@+id/button" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/reset"
+            android:onClick="@{()->viewModel.reset()}"
+            app:layout_constraintBottom_toTopOf="@+id/chart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

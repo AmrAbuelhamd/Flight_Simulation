@@ -5,4 +5,5 @@
     <string name="angle">angle</string>
     <string name="launch">Launch</string>
     <string name="pause">pause</string>
+    <string name="reset">Reset</string>
 </resources>

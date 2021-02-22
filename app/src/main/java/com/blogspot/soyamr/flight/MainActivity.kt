@@ -95,6 +95,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun removeEverything() {
         set.clear()
+        chart.fitScreen()
         notifyChart()
     }
 
